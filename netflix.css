@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main{
+    position: relative;
+    background-image: url("bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 644px;
+    width: 100vw;
+}
+
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 644px;
+    width: 100vw;
+    opacity: 0.69;
+    background-color: black;
+}
+
+nav{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 62px;
+}
+
+nav img{
+    margin-left: 40px;
+    width: 130px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    right: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    padding: 0 30px;
+    position: relative;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 2em;
+    height: calc(100% - 62px);
+}
+
+.chotu{
+    font-size: 20px;
+}
+
+.separation{
+    height: 8px;
+    background-color: rgba(128, 128, 128, 0.384);
+}
+
+.btn{
+    padding: 6px 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.082);
+    border: 0.5px solid white;
+    color: white;
+    font-weight: 750;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+#fruits{
+    padding: 6px 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.082);
+    border: 0.5px solid white;
+    color: white;
+    font-weight: 750;
+    font-size: 0.875rem;
+    cursor: pointer;
+    right: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+option {
+    color: black; /* Set text color for options */
+    background-color: white; /* Set background color for options */
+}
+
+.btn-red-sm{
+    background-color: rgb(229, 9, 20);
+    border: none;
+}
+
+.btn-red{
+    background-color: rgb(229, 9, 20);
+    padding: 15px 30px;
+    font-size: 24px;
+    border: none;
+}
+
+input{
+    font-size: 1rem;
+    padding: 20px 140px 15px 10px;
+    border: 0px solid transparent;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.321);
+    border: 0.5px solid white;
+    color: white;
+}
+
+.first{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 500px;
+}
+
+@media  (max-width: 780px) {
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+.secondtext{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px ;
+}
+
+.secondtext:nth-child(1){
+    font-size: 1.5rem;
+    gap: 15px;
+}
+
+#bold{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.tv{
+    position: relative;
+}
+
+.tv img{
+    height: 350px;
+    width: 468px;
+    position: relative;
+    right: 0px;
+}
+
+.tv video{
+    position: absolute;
+    right: 63px;
+    top: 70px;
+    height: 194px;
+    width: 345px;
+}
+
+.separation2{
+    height: 8px;
+    background-color: rgba(128, 128, 128, 0.384);
+}
+
+.second{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 654px;
+}
+
+@media  (max-width: 780px) {
+
+    .first{
+        height: 600px;
+    }
+
+    .second{
+        flex-wrap: wrap;
+        /* padding-left: 50px; */
+        height: 700px;
+    }
+
+    #bold{
+        font-size: 30px;
+        text-align: center;
+        padding: 40px 0px 0px;
+    }
+
+    .thirdtext span{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .secondtext span{
+        font-size: 22px;
+        text-align: center;
+        padding: 0px 80px;
+    }
+
+    .mobile > img{
+        position: relative !important;
+        top: 0px !important;
+        right: 0px !important;
+    }
+
+    .downloadbtn{
+        position: relative !important;
+        right: 0px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .mobile > img{
+        height: 324px !important;
+        width: 419px !important;
+    }
+}
+@media (max-width: 530px) {
+    .tv2 > img{
+        height: 324px !important;
+        width: 419px !important;
+    }
+    .tv > video{
+        height: 194px !important;
+        width: 345px !important;
+    }
+}
+
+.thirdtext{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 30px ; */
+}
+
+.thirdtext:nth-child(1){
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+.thirdtext:nth-of-type(2){
+    font-size: 26px;
+}
+
+.downloadbtn{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 113px;
+    right: 23px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 15px;
+    height: 90px;
+    width: 300px;
+}
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mobile > img{
+    height: 395px;
+    width: 501px;
+    position: relative;
+    top: 20px;
+    right: 22px;
+}
+
+.boxshot{
+    height: 70px;
+    padding-left: 10px;
+}
+
+.strange{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bold2{
+    font-weight: 600;
+}
+
+.strange1{
+    font-size: 13px;
+    color: rgb(7, 103, 220);
+}
+
+.tv2{
+    position: relative;
+    height: 500px;
+    width: 435px;
+    /* right: 22px; */
+}
+
+.tv2 video{
+    height: 239px;
+    left: 70px;
+    right: 0px;
+    width: 290px;
+    position: relative;
+    top: 32px;
+}
+
+.tv2 img{
+    position: relative;
+    bottom: 214px;
+    width: 435px;
+}
+
+.secondsep{
+    height: 500px;
+}
+
+.separation3{
+    height: 8px;
+    background-color: rgba(128, 128, 128, 0.384);
+}
+
+.fourth{
+    height: 654px;
+}
+
+.fifth{
+    height: 945px;
+    color: white;
+}
+
+.heading h1{
+    padding-top: 30px;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.faq{
+    padding-top: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.faq div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 80vw;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.faq div:hover{
+    background-color: #414141;
+    transition: all ease-in-out 0.3s;
+}
+
+.questions{
+    font-size: 22px;
+    font-weight: 480;
+    padding: 0 28px;
+}
+
+.plus{
+    padding-right: 28px;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: 'Calibri,';
+}
+
+.subscribe{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.hero2{
+    height: 150px;
+    justify-content: flex-start;
+}
+
+.last{
+    height: 200px;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.last{
+    padding: 80px 30px;
+}
+
+.more{
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+    column-gap: 0px;
+}
+
+@media (max-width: 550px) {
+    .more{
+        width: 100px;
+    }
+}
+
+.columns{
+    width:196px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.column1{
+    display: flex;
+    width: 400px;
+}
+
+.column2{
+    display: flex;
+    width: 400px;
+}
+
+@media (max-width:780px) {
+    .column1{
+        flex-wrap: wrap;
+    }
+    .column2{
+        flex-wrap: wrap;
+    }
+}
+
+.leng{
+    position: relative;
+    left: 0px;
+    width: 100px;
+}
+.netflix{
+    padding: 20px 0px;
+    font-size: 14px;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 450px) {
+    .tv img{
+        height: 350px;
+        width: 418px;
+        position: relative;
+        right: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .tv2 video{
+        height: 190px !important;
+        left: 85px;
+        width: 260px !important;
+        position: absolute;
+        /* top: 32px; */
+    }
+        .tv2 img {
+            position: relative;
+            bottom: 0px;
+            width: 435px;
+    }
+}
