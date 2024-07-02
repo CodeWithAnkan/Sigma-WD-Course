@@ -1,0 +1,908 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-container {
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 25vw;
+  height: 100vh;
+  padding: 8px;
+}
+
+.logo img {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.home {
+  border-radius: 10px;
+}
+
+.right {
+  background-image: linear-gradient(rgb(31, 31, 31), black);
+  overflow: hidden;
+  margin-top: 9px;
+  margin-left: 25vw;
+  padding: 0px 15px;
+  border-radius: 10px;
+  width: 71.5vw;
+
+}
+
+.home ul {
+  padding: 10px 10px 15px;
+}
+
+.home ul li {
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  width: 24px;
+  cursor: pointer;
+}
+
+.library {
+  width: 25vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.library ul li {
+  padding: 10px 20px 10px;
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  width: 24px;
+  cursor: pointer;
+}
+
+.plusvg ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.createplaylist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  /* cursor: pointer; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: #242424;
+  margin-bottom: 5px;
+}
+
+.podcast {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: #242424;
+}
+
+.plusvg div p {
+  font-size: 13px;
+}
+
+.plusvg div button {
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  padding: 5px;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 10px;
+  color: rgb(135, 133, 133);
+}
+
+.library span {
+  padding-top: 0px;
+}
+
+.cookies {
+  padding: 18px 19.2px;
+  font-size: 11px;
+  color: rgb(182, 182, 182);
+  cursor: pointer;
+}
+
+.footer p {
+  cursor: pointer;
+}
+
+.lang {
+  width: 100px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.lang button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.lang button img {
+  width: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #989898;
+}
+
+.nav {
+  background-color: black;
+  margin-top: -10px;
+  height: 65px;
+  width: 73vw;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar {
+  position: fixed;
+  top: 8px;
+  z-index: 10;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  height: 45px;
+  width: 71.1vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  list-style: none;
+  background-color: rgb(24, 24, 24);
+}
+
+.arrow {
+  display: flex;
+  gap: 10px;
+}
+
+.right a {
+  position: relative;
+  top: 10px;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  border: none;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.right a img {
+  filter: invert(1);
+  padding: 5px;
+  width: 10px;
+}
+
+.registration button {
+  cursor: pointer;
+  border: none;
+  font-weight: 750;
+  padding: 16px 30px;
+  border-radius: 30px;
+}
+
+.black {
+  background-color: black;
+  color: #989898;
+}
+
+.artists {
+  border-radius: 10px;
+  height: 30px;
+  padding: 95px 0px 15px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artists p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.singers {
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+
+.art {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 220px;
+  width: 170px;
+}
+
+.art:hover {
+  animation-name: example;
+  animation-duration: 100ms;
+  background-color: #1f1f1fdd;
+  border-radius: 10px;
+
+}
+
+@keyframes example {
+  0% {
+    background-color: transparent;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.art1 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(pritam.jpg);
+  background-size: cover;
+}
+
+.art2 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(arijit\ singh.jpg);
+  background-size: cover;
+}
+
+.art3 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(ar\ rahman.jpg);
+  background-size: cover;
+}
+
+.art4 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(Anirudh.jpg);
+  background-size: cover;
+}
+
+.art5 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(Sachin-jigar.jpg);
+  background-size: cover;
+}
+
+.art6 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(vishal.jpg);
+  background-size: cover;
+}
+
+.art7 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(atif.jpg);
+  background-size: cover;
+}
+
+.art8 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(sekhar.jpg);
+  background-size: cover;
+}
+
+.art9 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(badshah.jpg);
+  background-size: cover;
+}
+
+.art10 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(darshan.jpg);
+  background-size: cover;
+}
+
+.art11 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(diljit.jpg);
+  background-size: cover;
+}
+
+.art12 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(shreya.jpg);
+  background-size: cover;
+}
+
+.art13 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(udit.jpg);
+  background-size: cover;
+}
+
+.art14 .popular {
+  border: none;
+  height: 220px;
+  width: 150px;
+  background-image: url(kk.jpg);
+  background-size: cover;
+}
+
+.art p {
+  padding-top: 15px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  align-self: start;
+}
+
+.art .play {
+  position: relative;
+  top: -30px;
+  right: -60px;
+  height: 70px;
+  width: 45px;
+  background-color: rgb(10, 218, 10);
+  transition: all 100ms ease;
+  opacity: 0;
+}
+
+.art .play img {
+  width: 20px;
+  filter: invert(0);
+}
+
+.art:hover .play {
+  position: relative;
+  background-color: rgb(80, 222, 80);
+  top: -50px;
+  opacity: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.preview {
+  position: fixed;
+  margin-left: 8px;
+  bottom: -35px;
+  opacity: 0;
+  transition: all 200ms ease;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+}
+
+.preview:hover {
+  opacity: 1;
+  bottom: 0px;
+  background-image: linear-gradient(to right, rgb(158, 54, 129), rgb(80, 184, 236));
+}
+
+.p1 {
+  padding-left: 20px;
+}
+
+.p1:nth-of-type(1) {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.registration {
+  padding-right: 20px;
+}
+
+.albums {
+  padding: 45px 0px 15px 20px;
+}
+
+.mixes1 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(Ek\ tha\ raja.jpg);
+  background-size: cover;
+}
+
+.mixes2 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(Animal.jpg);
+  background-size: cover;
+}
+
+.mixes3 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(love-hotel.jpg);
+  background-size: cover;
+}
+
+.mixes4 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(ashiqui2.jpg);
+  background-size: cover;
+}
+
+.mixes5 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(Moosetape.jpg);
+  background-size: cover;
+}
+
+.mixes6 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(saajni.jpg);
+  background-size: cover;
+}
+
+.mixes7 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(making\ memories.jpg);
+  background-size: cover;
+}
+
+.mixes8 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(rockstar.jpg);
+  background-size: cover;
+}
+
+.mixes9 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(naina.jpg);
+  background-size: cover;
+}
+
+.mixes10 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(jab\ we\ met.jpg);
+  background-size: cover;
+}
+
+.mixes11 .popular {
+  border: none;
+  border-radius: 10px;
+  height: 275px;
+  width: 150px;
+  background-image: url(Aavesham.jpg);
+  background-size: cover;
+}
+
+.popart {
+  padding-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  gap: 47px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1145px) {
+  .artists {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:854px) {
+  .artists {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0px 15px 20px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 8px;
+    z-index: 10;
+    width: 71vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .singers {
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+  }
+
+  .popart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width:663px) {
+
+  .artists {
+    font-size: 14px;
+  }
+
+  .artists h2 {
+    width: 150px;
+  }
+
+  .library ul {
+    font-size: 14px;
+  }
+
+  .library li img {
+    width: 14px !important;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .lang {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .lang button {
+    width: 80px;
+    height: 25px;
+  }
+
+  .lang button p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .home {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:616px) {
+  .createplaylist button {
+    width: 90px !important;
+    padding: 10px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .home {
+    font-size: 12px;
+  }
+
+  .home ul {
+    padding: 0px 0px 5px;
+  }
+
+  .home ul li {
+    padding: 10px;
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    width: 16px;
+    cursor: pointer;
+  }
+
+  .logo img {
+    padding-top: 15px;
+    padding-left: 8px;
+    width: 70px;
+  }
+
+  .lang {
+    position: relative;
+    bottom: 10px;
+    left: -10px;
+  }
+
+  .plusvg li {
+    font-size: 12px;
+  }
+
+  .library ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .playlist {
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    border-radius: 10px;
+    background-color: #242424;
+    margin-bottom: 5px;
+  }
+
+  .podcast {
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    border-radius: 10px;
+    background-color: #242424;
+  }
+
+  .createplaylist button {
+    width: 50px !important;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:546px) {
+  .singers .art .popular {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 350px;
+  }
+
+  .art {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 290px;
+  }
+
+  .art p {
+    padding-left: 0px !important;
+    font-size: 24px;
+    font-weight: 600;
+    align-self: center;
+  }
+
+  .art4 p {
+    padding-left: 10px !important;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .albums {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 0px 50px 20px;
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .registration button {
+    cursor: pointer;
+    border: none;
+    font-weight: 750;
+    padding: 16px 20px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .artists {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .art .play {
+    position: relative;
+    top: -30px;
+    right: -60px;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(10, 218, 10);
+    transition: all 100ms ease;
+    opacity: 0;
+  }
+
+  .art {
+    padding: 0px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 360px;
+    width: 245px;
+  }
+
+  .singers .art .popular {
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    width: 237px;
+    height: 223px;
+  }
+
+}
+
+@media screen and (max-width: 395px) {
+  .registration button{
+    padding: 5px;
+  }
+
+  .right a {
+      position: relative;
+      top: 0px;
+      display: flex;
+      height: 30px;
+      width: 30px;
+      justify-content: center;
+      border: none;
+      background-color: black;
+      border-radius: 100%;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 8px;
+    z-index: 10;
+    width: 71vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .singers .art .popular {
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+  }
+
+  .art {
+    padding-top: 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 276px;
+    width: 245px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p1:nth-of-type(1) {
+    font-size: 10px;
+    font-weight: 600;
+}
+}
+
+@media screen and (max-width: 585px){
+  .registration1 button{
+    width: 100px;
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+}
